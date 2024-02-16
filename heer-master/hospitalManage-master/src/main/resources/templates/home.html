@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<title>this is home page</title>
+</head>
+<body>
+	  <section class="banner">
+		<div class="text-center">
+			<h1 class="font-weight-bold">Sierra Hospital</h1>
+		    <p>
+		        Health is our first priority.We provide
+				better treatment at nominal charges.
+			</p>
+			<br>
+			</div>
+  <div class="row text-center">
+  <div class="col-6 col-md-4"><figure class="figure">
+  <a class="nav-link " href="#"th:href="@{/recsignin}" tabindex="-1" aria-disabled="true">
+  <img src="" th:src="@{img/newReceptionist.png}" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+  </a>
+ </em> <figcaption class="figure-caption text-info font-weight-bold">Receptionist Login.</figcaption></em>
+</figure></div>
+    <div class="col-6 col-md-4"><figure class="figure">
+    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">
+  <img src=""class="figure-img img-fluid rounded" >
+  </a>
+  <figcaption class="figure-caption"> .</figcaption>
+</figure></div>
+
+  <div class="col-6 col-md-4"><figure class="figure">
+    <a class="nav-link " href="#"th:href="@{/Docsignin}" tabindex="-1" aria-disabled="true">
+  <img src="" th:src="@{img/doctor.png}" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+  </a>
+  <em><figcaption class="figure-caption text-info font-weight-bold">Doctor Login.</figcaption></em>
+</figure></div>
+
+
+</div>
+<br>
+<center><a class="nav-link" href="#" th:href="@{/emergency}"><button type="button" class="btn btn-danger btn-lg btn-lg">Call An Ambulance</button></a></center>
+			
+		
+	</section>
+	<div class="row">
+  
+</body>
+</html>
